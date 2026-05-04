@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/spacing_sm">
+
+    <ImageView
+        android:id="@+id/ivCastPhoto"
+        android:layout_width="@dimen/cast_photo_size"
+        android:layout_height="@dimen/cast_photo_size"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/desc_poster"
+        tools:src="@drawable/placeholder_poster"/>
+
+    <TextView
+        android:id="@+id/tvCastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:maxWidth="80dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/spacing_xs"
+        tools:text="Actor Name"/>
+
+    <TextView
+        android:id="@+id/tvCastCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/gray"
+        android:maxWidth="80dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        tools:text="Character"/>
+
+</LinearLayout>
